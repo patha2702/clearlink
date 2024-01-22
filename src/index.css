@@ -35,7 +35,7 @@
 }
 
 .bg-content-img {
-    background-image: url('./assets/content-bg.svg');
+    background-image: url('/assets/content-bg.svg');
     background-size: cover;
 }
 
