@@ -3,10 +3,11 @@ import recordIcon from "/assets/record-icon.svg"
 import scheduleIcon from "/assets/schedule-icon.svg"
 import audioIcon from "/assets/audio-icon.svg"
 import whyClearlinkImg from "/assets/whyChooseClearlink-img.png";
+import handDrawnArrowIcon from "/assets/hand-drawn-arrow.svg"
 
 const WhyClearlink = () => {
   return (
-    <section className="py-6 px-10 flex flex-col justify-between items-start gap-3">
+    <section className="relative py-6 px-10 flex flex-col justify-between items-start gap-3">
       <section className="py-6 px-8 flex flex-col justify-between items-start gap-2">
         <span className="text-sm font-semibold text-175CD3">
           The ClearLink Advantage
@@ -19,6 +20,9 @@ const WhyClearlink = () => {
           Our cutting-edge video conferencing app offers:{" "}
         </p>
       </section>
+      <div className="absolute top-[10%] right-[15%]">
+        <img src={handDrawnArrowIcon} alt="hand drawn arrow" className="w-[70%]" />
+      </div>
       <section className="py-4 flex justify-around items-center">
         <section className="py-4 w-[60%] flex gap-7 flex-wrap">
           <section className="w-[45%] flex flex-col gap-3">
