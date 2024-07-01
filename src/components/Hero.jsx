@@ -14,32 +14,34 @@ import zap6 from "/assets/zap6.svg";
 import roboIcon from "/assets/robo-icon.svg";
 import avatarGroup from "/assets/avatar-group.svg"
 import ratingsIcon from "/assets/5-stars.svg"
+import MobileNav from "./MobileNav";
 
 const Hero = () => {
   return (
-    <div className="pt-6 pb-10 px-10 flex flex-col gap-20 bg-fading">
+    <div className="h-screen w-full sm:pt-6 sm:pb-10 sm:px-5 lg:px-10 sm:flex sm:flex-col lg:gap-20 bg-fading">
       <Header />
-      <section className="px-8 py-5 flex justify-between">
-        <section className="w-[45%] py-2 flex flex-col justify-between items-start">
+      <MobileNav />
+      <section className="max-sm:h-full px-8 py-5 flex justify-between max-sm:justify-center">
+        <section className="max-sm:w-full sm:w-[45%] max-sm:mt-12 py-2 flex flex-col max-sm:gap-6 max-sm:justify-start justify-between items-start">
           <h2 className="text-5xl font-semibold text-1D2939">
             Uniting the world, one video call at a time
           </h2>
-          <p className="text-xl pr-16 text-667085">
+          <p className="text-xl sm:pr-16 text-667085">
             Experience the future of communication with ClearLink - where
             crystal-clear video conferencing meets unparalleled simplicity.
           </p>
-          <div className="flex justify-around gap-1 items-center">
-            <button className="rounded-full px-4 py-3 text-base font-semibold text-white bg-blue-700">
+          <div className="max-sm:w-full flex max-sm:flex-col justify-start gap-1 max-sm:gap-2 items-center max-sm:items-start">
+            <button className="max-sm:w-full rounded-full px-4 py-3 text-base font-semibold text-white bg-blue-700">
               Start your free trial
             </button>
-            <button className="rounded-full px-4 py-3 text-base font-semibold text-blue-700 bg-white">
-              <span className="flex gap-1 justify-around items-center">
+            <button className="max-sm:w-full rounded-full px-4 py-3 text-base font-semibold text-blue-700 bg-white">
+              <span className="flex gap-1 max-sm:gap-2 justify-center items-center">
                 <img src={roboIcon} alt="Robo icon" className="pb-1" />
                 <span>Discover AI assistant</span>
               </span>
             </button>
           </div>
-          <div className="flex gap-[4px] items-center text-[12px]">
+          <div className="flex flex-wrap gap-[4px] items-center text-[12px] mt-2">
             <img src={avatarGroup} alt="client avatars" />
             <span className="flex flex-col">
               <span className="flex gap-1 items-center">
@@ -50,7 +52,7 @@ const Hero = () => {
             </span>
           </div>
         </section>
-        <section className="w-[40%]">
+        <section className="max-lg:hidden w-[40%]">
           <section className="bg-EFF8FF border-[1px] border-B2DDFF rounded-lg shadow-2xl">
             <section className="p-5 flex gap-3 flex-wrap">
               <img src={animoji1} alt="animoji 1" className="w-[30%]" />
